@@ -5,19 +5,22 @@
   
   <title>Jenkins自动化部署 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Jenkins自动化部署Jenkins安装1.下载安装2.安装MAVEN，JDK使用Send build artifacts over SSH发布项目通过SSH 上传代码，并自动删除ROOT目录
-Tomcat 配置虚拟映射Tomcat 配置自动解压WAR部署…bashkill -9 ${k}/usr/sbin/lsof -n -P -t -i :8080 ;/bin/startup.sh…">
+  <meta name="description" content="Jenkins安装—1.下载安装—2.安装MAVEN，JDK
+使用Send build artifacts over SSH发布项目通过SSH 上传代码，并自动删除ROOT目录
+Tomcat 配置虚拟映射Tomcat 配置自动解压WAR部署kill -9 ${k}`/usr/sbin/lsof -n -P -t -i :8080` ;/bin/startup.sh">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Jenkins自动化部署">
 <meta property="og:url" content="http://yoursite.com/2015/07/02/Jenkins自动化部署/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="Jenkins自动化部署Jenkins安装1.下载安装2.安装MAVEN，JDK使用Send build artifacts over SSH发布项目通过SSH 上传代码，并自动删除ROOT目录
-Tomcat 配置虚拟映射Tomcat 配置自动解压WAR部署…bashkill -9 ${k}/usr/sbin/lsof -n -P -t -i :8080 ;/bin/startup.sh…">
-<meta property="og:updated_time" content="2015-07-02T06:52:53.000Z">
+<meta property="og:description" content="Jenkins安装—1.下载安装—2.安装MAVEN，JDK
+使用Send build artifacts over SSH发布项目通过SSH 上传代码，并自动删除ROOT目录
+Tomcat 配置虚拟映射Tomcat 配置自动解压WAR部署kill -9 ${k}`/usr/sbin/lsof -n -P -t -i :8080` ;/bin/startup.sh">
+<meta property="og:updated_time" content="2015-07-02T06:54:49.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Jenkins自动化部署">
-<meta name="twitter:description" content="Jenkins自动化部署Jenkins安装1.下载安装2.安装MAVEN，JDK使用Send build artifacts over SSH发布项目通过SSH 上传代码，并自动删除ROOT目录
-Tomcat 配置虚拟映射Tomcat 配置自动解压WAR部署…bashkill -9 ${k}/usr/sbin/lsof -n -P -t -i :8080 ;/bin/startup.sh…">
+<meta name="twitter:description" content="Jenkins安装—1.下载安装—2.安装MAVEN，JDK
+使用Send build artifacts over SSH发布项目通过SSH 上传代码，并自动删除ROOT目录
+Tomcat 配置虚拟映射Tomcat 配置自动解压WAR部署kill -9 ${k}`/usr/sbin/lsof -n -P -t -i :8080` ;/bin/startup.sh">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -215,8 +218,10 @@ Tomcat 配置虚拟映射Tomcat 配置自动解压WAR部署…bashkill -9 ${k}/u
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="Jenkins自动化部署">Jenkins自动化部署</h1><h2 id="Jenkins安装">Jenkins安装</h2><h3 id="1-下载安装">1.<a href="http://mirrors.jenkins-ci.org/war/latest/jenkins.war" target="_blank" rel="external">下载安装</a></h3><h3 id="2-安装MAVEN，JDK">2.安装MAVEN，JDK</h3><h2 id="使用Send_build_artifacts_over_SSH发布项目">使用Send build artifacts over SSH发布项目</h2><p>通过SSH 上传代码，并自动删除ROOT目录</p>
-<h2 id="Tomcat_配置虚拟映射">Tomcat 配置虚拟映射</h2><h2 id="Tomcat_配置自动解压WAR部署">Tomcat 配置自动解压WAR部署</h2><p>…bash<br>kill -9 ${k}<code>/usr/sbin/lsof -n -P -t -i :8080</code> ;/bin/startup.sh<br>…</p>
+        <h2 id="Jenkins安装">Jenkins安装</h2><p>—1.<a href="http://mirrors.jenkins-ci.org/war/latest/jenkins.war" target="_blank" rel="external">下载安装</a><br>—2.安装MAVEN，JDK</p>
+<h2 id="使用Send_build_artifacts_over_SSH发布项目">使用Send build artifacts over SSH发布项目</h2><p>通过SSH 上传代码，并自动删除ROOT目录</p>
+<h2 id="Tomcat_配置虚拟映射">Tomcat 配置虚拟映射</h2><h2 id="Tomcat_配置自动解压WAR部署">Tomcat 配置自动解压WAR部署</h2><pre><code class="bash"><span class="built_in">kill</span> -<span class="number">9</span> <span class="variable">${k}</span>`/usr/sbin/lsof -n -P -t -i :<span class="number">8080</span>` ;/bin/startup.sh
+</code></pre>
 
       
     </div>
