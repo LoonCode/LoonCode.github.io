@@ -19,7 +19,7 @@
 
 使用Send build artifacts over SSH发布项目
 在 Manage Jenkins/Configure System 中配置SHH的信息，通过SSH 上传代码，并自动删除ROOT目录，">
-<meta property="og:updated_time" content="2015-07-08T03:08:59.000Z">
+<meta property="og:updated_time" content="2015-07-08T05:44:54.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Jenkins自动化部署">
 <meta name="twitter:description" content="Jenkins安装
@@ -233,7 +233,8 @@
 <h2 id="Tomcat_配置虚拟映射">Tomcat 配置虚拟映射</h2><blockquote>
 <p>appBase：是可以自动部署war的路径，默认是在tomcat的安装路径下的webapps，如果用tomcat的默认的话使用相对路径，也可以使用绝对路径指定一个非tomcat默认的路径。<br>docBase：与appBase没什么直接关系，它指出特定的应用的单独设置。如果war包在appbase下，可以使用相对路径，比如在appBase路径下有，a.war,docBase时可以用a来设置。常用使用绝对路径定义。  </p>
 </blockquote>
-<h2 id="Tomcat_配置自动解压WAR部署">Tomcat 配置自动解压WAR部署</h2><pre><code class="bash"><span class="built_in">kill</span> -<span class="number">9</span> <span class="variable">${k}</span>`/usr/sbin/lsof -n -P -t -i :<span class="number">8080</span>` ;/bin/startup.sh
+<h2 id="Tomcat_配置自动解压WAR部署">Tomcat 配置自动解压WAR部署</h2><p>Tomcat自动化部署的插件很多，原始的部署工具，需要修改tomcat增加远程访问，对于外网项目不是很合适；<br>个人在多环境部署下，生产环境的项目包都是经过测试通过的；所以可以从测试环境拿发布包，或者拿最近的构建包。</p>
+<pre><code class="bash"><span class="built_in">kill</span> -<span class="number">9</span> <span class="variable">${k}</span>`/usr/sbin/lsof -n -P -t -i :<span class="number">8080</span>` ;/bin/startup.sh
 </code></pre>
 
       
