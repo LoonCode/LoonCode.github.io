@@ -272,10 +272,13 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="Jenkins安装">Jenkins安装</h2><p><a href="http://mirrors.jenkins-ci.org/war/latest/jenkins.war" target="_blank" rel="external">下载安装</a><br>安装MAVEN，JDK. 在 Manage Jenkins/Configure System 中配置本地的，修改maven仓库的地址。配置maven的上传账号。</p>
-<h2 id="使用Send_build_artifacts_over_SSH发布项目">使用Send build artifacts over SSH发布项目</h2><p>在 Manage Jenkins/Configure System 中配置SHH的信息，<br>通过SSH 上传代码，并自动删除ROOT目录，此处如果原来使用FTP上传的话会因为ROOT目录重新建立而导致失去操作权限。</p>
-<h2 id="Tomcat_配置虚拟映射">Tomcat 配置虚拟映射</h2><p>appBase：是可以自动部署war的路径，默认是在tomcat的安装路径下的webapps，如果用tomcat的默认的话使用相对路径，也可以使用绝对路径指定一个非tomcat默认的路径。<br>docBase：与appBase没什么直接关系，它指出特定的应用的单独设置。如果war包在appbase下，可以使用相对路径，比如在appBase路径下有，a.war,docBase时可以用a来设置。常用使用绝对路径定义。</p>
-<h2 id="Tomcat_配置自动解压WAR部署">Tomcat 配置自动解压WAR部署</h2><pre><code class="bash"><span class="built_in">kill</span> -<span class="number">9</span> <span class="variable">${k}</span>`/usr/sbin/lsof -n -P -t -i :<span class="number">8080</span>` ;/bin/startup.sh
+        <h2 id="Jenkins安装">Jenkins安装</h2><hr>
+<p><a href="http://mirrors.jenkins-ci.org/war/latest/jenkins.war" target="_blank" rel="external">下载安装</a></p>
+<h2 id="安装MAVEN，JDK-_在_Manage_Jenkins/Configure_System_中配置本地的，修改maven仓库的地址。配置maven的上传账号。">安装MAVEN，JDK. 在 Manage Jenkins/Configure System 中配置本地的，修改maven仓库的地址。配置maven的上传账号。</h2><h2 id="使用Send_build_artifacts_over_SSH发布项目">使用Send build artifacts over SSH发布项目</h2><hr>
+<p>在 Manage Jenkins/Configure System 中配置SHH的信息，</p>
+<h2 id="通过SSH_上传代码，并自动删除ROOT目录，此处如果原来使用FTP上传的话会因为ROOT目录重新建立而导致失去操作权限。">通过SSH 上传代码，并自动删除ROOT目录，此处如果原来使用FTP上传的话会因为ROOT目录重新建立而导致失去操作权限。</h2><h2 id="Tomcat_配置虚拟映射">Tomcat 配置虚拟映射</h2><hr>
+<p>appBase：是可以自动部署war的路径，默认是在tomcat的安装路径下的webapps，如果用tomcat的默认的话使用相对路径，也可以使用绝对路径指定一个非tomcat默认的路径。</p>
+<h2 id="docBase：与appBase没什么直接关系，它指出特定的应用的单独设置。如果war包在appbase下，可以使用相对路径，比如在appBase路径下有，a-war,docBase时可以用a来设置。常用使用绝对路径定义。">docBase：与appBase没什么直接关系，它指出特定的应用的单独设置。如果war包在appbase下，可以使用相对路径，比如在appBase路径下有，a.war,docBase时可以用a来设置。常用使用绝对路径定义。</h2><h2 id="Tomcat_配置自动解压WAR部署">Tomcat 配置自动解压WAR部署</h2><pre><code class="bash"><span class="built_in">kill</span> -<span class="number">9</span> <span class="variable">${k}</span>`/usr/sbin/lsof -n -P -t -i :<span class="number">8080</span>` ;/bin/startup.sh
 </code></pre>
 
       
